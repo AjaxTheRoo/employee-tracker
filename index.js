@@ -27,26 +27,17 @@ const mainMenu = () => {
                 viewAllDepartments().then(res => {
                     console.table(res.rows);
                     mainMenu();
-                }).catch(err => {
-                    console.error('Error viewing departments:', err.message);
-                    mainMenu();
                 });
                 break;
             case 'View all roles':
                 viewAllRoles().then(res => {
                     console.table(res.rows);
                     mainMenu();
-                }).catch(err => {
-                    console.error('Error viewing roles:', err.message);
-                    mainMenu();
                 });
                 break;
             case 'View all employees':
                 viewAllEmployees().then(res => {
                     console.table(res.rows);
-                    mainMenu();
-                }).catch(err => {
-                    console.error('Error viewing employees:', err.message);
                     mainMenu();
                 });
                 break;
@@ -60,9 +51,6 @@ const mainMenu = () => {
                 ]).then(answer => {
                     addDepartment(answer.name).then(() => {
                         console.log('Department added successfully!');
-                        mainMenu();
-                    }).catch(err => {
-                        console.error('Error adding department:', err.message);
                         mainMenu();
                     });
                 });
@@ -87,9 +75,6 @@ const mainMenu = () => {
                 ]).then(answer => {
                     addRole(answer.title, answer.salary, answer.department_id).then(() => {
                         console.log('Role added successfully!');
-                        mainMenu();
-                    }).catch(err => {
-                        console.error('Error adding role:', err.message);
                         mainMenu();
                     });
                 });
