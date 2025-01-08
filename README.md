@@ -43,7 +43,7 @@ Follow the on-screen prompts to manage the employee database. The application pr
 
 ## Walkthrough Video
 
-<video src='https://drive.google.com/file/d/1gtiMp8Jv15J0ZTLs_WhpFfQlE-c9OGsO/view' width=180/>
+<video src="https://drive.google.com/file/d/1gtiMp8Jv15J0ZTLs_WhpFfQlE-c9OGsO/view" width="300" />
 
 ## Technologies Used
 - Node.js
